@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		
 			features = "src/test/resources/ntk1/", 
 			glue = {"steps" },
-			plugin = {"pretty", "html:target/cucumberd-report.html"},
+			plugin = {"pretty", "html:target/cucumberd-report.html",
+					  "json:target/cucumberd-report.json"},
 			monochrome = true
 	
 		)
